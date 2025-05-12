@@ -381,37 +381,8 @@ else:
 
 # --- Instrukcja Użycia ---
 with st.expander("📜 Instrukcja Uruchomienia i Użycia"):
-    st.markdown("""
-    **Jak uruchomić aplikację lokalnie:**
-
-    1.  **Zainstaluj Python:** Upewnij się, że masz zainstalowanego Pythona (wersja 3.8+). Możesz go pobrać z [python.org](https://www.python.org/downloads/).
-    2.  **Utwórz środowisko wirtualne (zalecane):**
-        Otwórz terminal lub wiersz poleceń i wykonaj:
-        ```bash
-        python -m venv venv
-        ```
-        Następnie aktywuj środowisko:
-        *   Windows: `venv\\Scripts\\activate`
-        *   macOS/Linux: `source venv/bin/activate`
-    3.  **Zainstaluj wymagane biblioteki:**
-        Stwórz plik `requirements.txt` w tym samym katalogu, gdzie zapiszesz poniższy kod aplikacji, o następującej zawartości:
-        ```
-streamlit
-pandas
-        ```
-        Następnie w aktywnym środowisku wirtualnym, w terminalu, uruchom:
-        ```bash
-        pip install -r requirements.txt
-        ```
-    4.  **Zapisz kod aplikacji:**
-        Skopiuj cały powyższy kod Pythona i zapisz go jako plik `app.py` w tym samym katalogu, gdzie znajduje się `requirements.txt`.
-    5.  **Uruchom aplikację Streamlit:**
-        W terminalu, będąc w katalogu z plikiem `app.py` (i z aktywnym środowiskiem wirtualnym), uruchom komendę:
-        ```bash
-        streamlit run app.py
-        ```
-        Aplikacja powinna otworzyć się automatycznie w Twojej przeglądarce internetowej.
-
+    st.markdown("
+ 
     **Jak używać modelu:**
 
     *   **Panel Boczny:** Po lewej stronie znajduje się panel z parametrami wejściowymi. Są one podzielone na kategorie (Konsultant, Ramp-up, Sprzedaż, itd.).
@@ -424,13 +395,4 @@ pandas
         *   Tabela ze szczegółowymi rocznymi kalkulacjami dla typów konsultantów (R1, R2, Full).
     *   **Eksperymentowanie:** Zachęcam do eksperymentowania z różnymi wartościami parametrów, aby zrozumieć ich wpływ na rentowność i rozwój firmy.
 
-    **Osadzanie w środowisku Sandbox:**
-
-    *   Aplikacje Streamlit są stosunkowo łatwe do wdrożenia na platformach typu PaaS (Platform as a Service) lub w kontenerach Docker.
-    *   Popularne darmowe lub częściowo darmowe opcje to:
-        *   **Streamlit Community Cloud (dawniej Streamlit Sharing):** Najprostsza opcja, jeśli Twój kod jest na GitHubie.
-        *   **Heroku:** Wymaga pliku `Procfile` i `runtime.txt` oprócz `requirements.txt`.
-        *   **Google Cloud Run / AWS App Runner:** Pozwalają na wdrażanie aplikacji skonteneryzowanych.
-    *   Podstawowe pliki potrzebne do wdrożenia to `app.py` oraz `requirements.txt`.
-    *   Aplikacja jest samowystarczalna i nie wymaga zewnętrznych baz danych ani skomplikowanych zależności, co ułatwia wdrożenie.
-    """)
+    ")
