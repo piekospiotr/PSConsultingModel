@@ -381,7 +381,7 @@ else:
 
 # --- Instrukcja Użycia ---
 with st.expander("📜 Instrukcja Uruchomienia i Użycia"):
-    st.markdown("
+    st.markdown("""
  
     **Jak używać modelu:**
 
@@ -395,4 +395,4 @@ with st.expander("📜 Instrukcja Uruchomienia i Użycia"):
         *   Tabela ze szczegółowymi rocznymi kalkulacjami dla typów konsultantów (R1, R2, Full).
     *   **Eksperymentowanie:** Zachęcam do eksperymentowania z różnymi wartościami parametrów, aby zrozumieć ich wpływ na rentowność i rozwój firmy.
 
-    ")
+    """)
